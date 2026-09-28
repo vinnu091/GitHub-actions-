@@ -1,0 +1,12 @@
+name: Test
+
+on:
+  workflow_call:
+
+jobs: 
+  build:
+    runs-on: ubuntu-latest
+  steps:
+    - name: Test your deployment
+      run: echo "testing done"
+      
