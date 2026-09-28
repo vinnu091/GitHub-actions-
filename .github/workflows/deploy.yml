@@ -1,0 +1,11 @@
+name: Test
+
+on:
+  workflow_call:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploy changes
+        run: echo "deployment done"
