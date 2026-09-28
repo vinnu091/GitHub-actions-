@@ -1,0 +1,20 @@
+name: Code
+# when will the workflow run
+on:
+# workflow runs on - push / when the workflow should run
+  push:
+
+jobs:
+# clones the repositioy
+  code-checkout:
+  # ur code runs on which machine
+    runs-on: ubuntu-latest
+    steps:
+    # below are actions / steps in the workflow
+    # clones the code
+    
+      - name: CLone the code
+        uses: actions/checkout@v7
+
+      - name: print the message
+        run: echo "hello world , give me power"
