@@ -2,7 +2,7 @@ name: Code
 # when will the workflow run
 on:
 # workflow runs on - push / when the workflow should run
-  push:
+  workflow_call:
 
 jobs:
 # clones the repositioy
