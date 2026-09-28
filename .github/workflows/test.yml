@@ -6,7 +6,7 @@ on:
 jobs: 
   build:
     runs-on: ubuntu-latest
-  steps:
-    - name: Test your deployment
-      run: echo "testing done"
+    steps:
+      - name: Test your deployment
+        run: echo "testing done"
       
