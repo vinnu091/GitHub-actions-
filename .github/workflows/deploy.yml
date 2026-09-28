@@ -5,7 +5,13 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
+      - name: code clone
+        uses: actions/checkout@v7
+        
+      - name: deploy via nginx
+        run: cp index.html /var/www/html
+        
       - name: deploy changes
         run: echo "deployment done"
